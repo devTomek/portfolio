@@ -10,7 +10,7 @@
   },
   "workbench.startupEditor": "none",
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
   },
   "eslint.format.enable": true,
   "explorer.confirmDelete": false,
@@ -31,7 +31,7 @@
   "explorer.confirmDragAndDrop": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
   },
   "editor.minimap.enabled": false,
   "pieces.setCopilotLocation": true
