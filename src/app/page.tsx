@@ -1,6 +1,4 @@
 export default function Home() {
-  const x = 'name';
-
   return (
     <main>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores obcaecati
