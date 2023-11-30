@@ -1,19 +1,14 @@
 {
-  "workbench.layoutControl.enabled": false,
-  "window.commandCenter": false,
-  "workbench.editor.showTabs": "single",
   "editor.formatOnSave": true,
   "files.autoSave": "onFocusChange",
   "editor.codeActionsOnSave": {
     "source.fixAll": true,
     "source.sortMembers": true
   },
-  "workbench.startupEditor": "none",
   "[typescriptreact]": {
     "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
   },
   "eslint.format.enable": true,
-  "explorer.confirmDelete": false,
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -24,15 +19,10 @@
   "[jsonc]": {
     "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
   },
-  "workbench.editor.enablePreview": false,
   "[css]": {
     "editor.defaultFormatter": "vscode.css-language-features"
   },
-  "explorer.confirmDragAndDrop": false,
-  "typescript.updateImportsOnFileMove.enabled": "always",
   "[json]": {
     "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
   },
-  "editor.minimap.enabled": false,
-  "pieces.setCopilotLocation": true
 }
