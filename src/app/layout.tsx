@@ -3,6 +3,7 @@ import '@/app/globals.css';
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 import { ReactNode } from 'react';
+import Navbar from '@/components/Navbar/Navbar';
 
 const poppins = Poppins({ subsets: ['latin'], weight: ['400', '600'] });
 
@@ -18,7 +19,10 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
-      <body className={poppins.className}>{children}</body>
+      <body className={poppins.className}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
