@@ -2,9 +2,9 @@
 
 import HamburgerMenu from '@/components/HamburgerMenu/HamburgerMenu';
 import { useScrolledDown } from '@/hooks/useScrolledDown';
-import classNames from 'classnames';
 import Link, { LinkProps } from 'next/link';
 import { containerClassName } from '@/components/Container/Container';
+import classNames from 'classnames';
 
 export interface NavbarLink {
   label: string;
@@ -48,7 +48,7 @@ export default function Navbar() {
 
         <ul className="invisible lg:visible flex">
           {navbarLinks.map(({ href, label }) => (
-            <li key={label} className="ml-10 text-3xl">
+            <li key={label} className="ml-10 text-3xl hover:underline">
               <Link href={href}>{label}</Link>
             </li>
           ))}

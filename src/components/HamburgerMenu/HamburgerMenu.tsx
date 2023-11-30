@@ -2,9 +2,9 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import classnames from 'classnames';
 import { Squash as Hamburger } from 'hamburger-react';
 import { navbarLinks } from '@/components/Navbar/Navbar';
+import classNames from 'classnames';
 
 export default function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +24,7 @@ export default function HamburgerMenu() {
       </div>
 
       <ul
-        className={classnames(
+        className={classNames(
           'bg-black text-white text-2xl h-screen transition-all fixed top-0 right-0 w-80',
           !isOpen ? 'translate-x-80' : '',
         )}
