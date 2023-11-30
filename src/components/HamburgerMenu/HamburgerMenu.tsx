@@ -5,17 +5,13 @@ import { ReactNode, useState } from 'react';
 import classnames from 'classnames';
 import { Squash as Hamburger } from 'hamburger-react';
 
-interface HamburgerMenuProps {
-  className?: string;
-}
-
-export default function HamburgerMenu({ className }: HamburgerMenuProps) {
+export default function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen((prev) => !prev);
 
   return (
-    <div className={className}>
+    <div className="lg:hidden">
       <div className="fixed right-0 sm:right-5 top-3 z-10">
         <Hamburger
           toggled={isOpen}
@@ -28,7 +24,7 @@ export default function HamburgerMenu({ className }: HamburgerMenuProps) {
 
       <ul
         className={classnames(
-          'bg-black text-white text-2xl h-full transition-all fixed top-0 right-0 w-80',
+          'bg-black text-white text-2xl h-screen transition-all fixed top-0 right-0 w-80',
           !isOpen ? 'translate-x-80 ' : '',
         )}
       >
@@ -49,6 +45,7 @@ export default function HamburgerMenu({ className }: HamburgerMenuProps) {
 interface LiProps {
   children: ReactNode;
 }
+
 function Li({ children }: LiProps) {
   return <li className="p-5">{children}</li>;
 }
