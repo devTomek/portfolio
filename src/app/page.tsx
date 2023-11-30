@@ -1,3 +1,48 @@
 export default function Home() {
-  return <main></main>;
+  return (
+    <main>
+      Main
+      <br />
+      Main
+      <br />
+      Main
+      <br />
+      Main
+      <br />
+      Main
+      <br />
+      Main
+      <br />
+      Main
+      <br />
+      Main
+      <br />
+      Main
+      <br />
+      Main
+      <br />
+      Main
+      <br />
+      Main
+      <br />
+      Main
+      <br />
+      Main
+      <br />
+      Main
+      <br />
+      Main
+      <br />
+      Main
+      <br />
+      Main
+      <br />
+      Main
+      <br />
+      Main
+      <br />
+      Main
+      <br />
+    </main>
+  );
 }
