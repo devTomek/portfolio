@@ -10,7 +10,7 @@ export default function Section({ children, className }: SectionProps) {
   return (
     <section
       className={classNames(
-        'flex flex-col lg:flex-row items-center justify-center my-24 lg:my-48',
+        'flex flex-col lg:flex-row items-center justify-center my-24 lg:my-60',
         className,
       )}
     >

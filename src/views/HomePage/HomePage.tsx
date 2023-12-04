@@ -10,6 +10,7 @@ import { BsFillLaptopFill } from 'react-icons/bs';
 import Icon from '@/components/Icon/Icon';
 import { FaUniversity } from 'react-icons/fa';
 import Image from '@/components/Image/Image';
+import { IoCheckmarkOutline } from 'react-icons/io5';
 
 export default function HomePage() {
   return (
@@ -87,6 +88,63 @@ export default function HomePage() {
             </div>
           </div>
         </div>
+      </Section>
+
+      <Section className="lg:flex-col">
+        <Heading as="h2" className="mb-5">
+          Tech Stack
+        </Heading>
+
+        <ul className="lg:grid lg:grid-cols-3 lg:gap-5">
+          <li className="flex items-center font-bold">
+            <Icon as={IoCheckmarkOutline} className="mr-2" />
+            React
+          </li>
+          <li className="flex items-center font-bold">
+            <Icon as={IoCheckmarkOutline} className="mr-2" />
+            NextJS
+          </li>
+          <li className="flex items-center font-bold">
+            <Icon as={IoCheckmarkOutline} className="mr-2" />
+            Typescript
+          </li>
+          <li className="flex items-center font-bold">
+            <Icon as={IoCheckmarkOutline} className="mr-2" />
+            Javascript
+          </li>
+          <li className="flex items-center font-bold">
+            <Icon as={IoCheckmarkOutline} className="mr-2" />
+            React Context
+          </li>
+          <li className="flex items-center font-bold">
+            <Icon as={IoCheckmarkOutline} className="mr-2" />
+            Redux
+          </li>
+          <li className="flex items-center font-bold">
+            <Icon as={IoCheckmarkOutline} className="mr-2" />
+            SCSS
+          </li>
+          <li className="flex items-center font-bold">
+            <Icon as={IoCheckmarkOutline} className="mr-2" />
+            Styled Components
+          </li>
+          <li className="flex items-center font-bold">
+            <Icon as={IoCheckmarkOutline} className="mr-2" />
+            SCRUM
+          </li>
+          <li className="flex items-center font-bold">
+            <Icon as={IoCheckmarkOutline} className="mr-2" />
+            REST
+          </li>
+          <li className="flex items-center font-bold">
+            <Icon as={IoCheckmarkOutline} className="mr-2" />
+            GraphQL
+          </li>
+          <li className="flex items-center font-bold">
+            <Icon as={IoCheckmarkOutline} className="mr-2" />
+            React Testing Library
+          </li>
+        </ul>
       </Section>
     </>
   );
