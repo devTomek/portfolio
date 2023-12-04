@@ -32,17 +32,17 @@ export default function Navbar() {
   return (
     <>
       <div
-        className={classNames('h-20 invisible', scrolledDown && 'visible')}
+        className={classNames('h-20 invisible z-10', scrolledDown && 'visible')}
       />
 
       <nav
         className={classNames(
           containerClassName,
-          'h-20 flex items-center justify-between transition-transform fixed top-0 left-0 right-0 bg-white',
+          'h-20 flex items-center justify-between transition-transform fixed top-0 left-0 right-0 bg-white z-10',
           scrolledDown ? '-translate-y-20' : 'translate-y-0',
         )}
       >
-        <Link href="/" className="text-4xl pr-14">
+        <Link href="#body" className="text-4xl pr-14">
           Tomasz Chybziński
         </Link>
 

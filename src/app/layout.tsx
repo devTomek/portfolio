@@ -21,7 +21,7 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
+      <body id="body" className={poppins.className}>
         <Navbar />
         <main>
           <Container>{children}</Container>
