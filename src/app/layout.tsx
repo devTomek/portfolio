@@ -5,6 +5,7 @@ import { Poppins } from 'next/font/google';
 import { ReactNode } from 'react';
 import Navbar from '@/components/Navbar/Navbar';
 import Container from '@/components/Container/Container';
+import Footer from '@/components/Footer/Footer';
 
 const poppins = Poppins({ subsets: ['latin'], weight: ['400', '600'] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <main>
           <Container>{children}</Container>
         </main>
+        <Footer />
       </body>
     </html>
   );
