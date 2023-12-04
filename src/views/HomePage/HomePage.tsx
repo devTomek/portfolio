@@ -11,11 +11,13 @@ import Icon from '@/components/Icon/Icon';
 import { FaUniversity } from 'react-icons/fa';
 import Image from '@/components/Image/Image';
 import { IoCheckmarkOutline } from 'react-icons/io5';
+import { IoMdMail } from 'react-icons/io';
+import { IoLogoLinkedin } from 'react-icons/io';
 
 export default function HomePage() {
   return (
     <>
-      <Section>
+      <Section className="lg:flex-row">
         <Image
           alt="tenerife profile rounded image"
           src={profileTenerife}
@@ -31,6 +33,7 @@ export default function HomePage() {
           <div className="mb-5">
             <Link
               href="CV.pdf"
+              target="_blank"
               className="border border-black rounded-full p-4 mr-2 hover:bg-black hover:text-white transition-colors inline-block text-center min-w-[140px]"
             >
               Preview CV
@@ -54,7 +57,7 @@ export default function HomePage() {
         </div>
       </Section>
 
-      <Section className="lg:flex-col">
+      <Section>
         <Heading as="h2" className="mb-5">
           About Me
         </Heading>
@@ -68,20 +71,16 @@ export default function HomePage() {
 
           <div className="flex flex-col">
             <div className="lg:flex lg:items-center lg:justify-center mb-5">
-              <Card className="mb-10 lg:mb-0 lg:mr-10 lg:w-full min-w-[230px]">
+              <Card className="mb-10 lg:mb-0 lg:mr-10 lg:w-full">
                 <Icon as={BsFillLaptopFill} />
-                <Heading as="h3" className="text-base lg:text-base">
-                  Experience
-                </Heading>
+                <Heading as="h3">Experience</Heading>
                 <p className="whitespace-nowrap">6+ years</p>
                 <p className="whitespace-nowrap">Frontend Developer</p>
               </Card>
 
-              <Card className="lg:w-full min-w-[230px]">
+              <Card className="lg:w-full">
                 <Icon as={FaUniversity} />
-                <Heading as="h3" className="text-base lg:text-base">
-                  Education
-                </Heading>
+                <Heading as="h3">Education</Heading>
                 <p className="whitespace-nowrap">M.Sc. Masters Degree</p>
                 <p className="whitespace-nowrap">B.Sc. Bachelors Degree</p>
               </Card>
@@ -90,7 +89,7 @@ export default function HomePage() {
         </div>
       </Section>
 
-      <Section className="lg:flex-col">
+      <Section>
         <Heading as="h2" className="mb-5">
           Tech Stack
         </Heading>
@@ -145,6 +144,35 @@ export default function HomePage() {
             React Testing Library
           </li>
         </ul>
+      </Section>
+
+      <Section>
+        <Heading as="h2" className="mb-5">
+          Contact Me
+        </Heading>
+
+        <div className="flex flex-col lg:flex-row">
+          <Link
+            href="mailto:tomasz.chybzinski@gmail.com"
+            className="block mb-5 lg:mr-5"
+          >
+            <Card resetFlex className="flex justify-center">
+              <Icon as={IoMdMail} className="mr-2" />
+              <Heading as="h3">Mail</Heading>
+            </Card>
+          </Link>
+
+          <Link
+            href="https://linkedin.com/in/tomasz-chybziński/"
+            className="block"
+            target="_blank"
+          >
+            <Card resetFlex className="flex justify-center">
+              <Icon as={IoLogoLinkedin} className="mr-2" />
+              <Heading as="h3">LinkedIn</Heading>
+            </Card>
+          </Link>
+        </div>
       </Section>
     </>
   );
