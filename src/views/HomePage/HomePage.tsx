@@ -81,8 +81,8 @@ export default function HomePage() {
               <Card className="lg:w-full">
                 <Icon as={FaUniversity} />
                 <Heading as="h3">Education</Heading>
-                <p className="whitespace-nowrap">M.Sc. Masters Degree</p>
-                <p className="whitespace-nowrap">B.Sc. Bachelors Degree</p>
+                <p className="whitespace-nowrap">MSc Computer Science</p>
+                <p className="whitespace-nowrap">BE Computer Science</p>
               </Card>
             </div>
           </div>
