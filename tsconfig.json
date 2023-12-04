@@ -22,7 +22,9 @@
     "paths": {
       "@/*": ["src/*"],
       "@/components/*": ["src/components/*"],
-      "@/hooks/*": ["src/hooks/*"]
+      "@/components/views": ["src/views/*"],
+      "@/hooks/*": ["src/hooks/*"],
+      "@/public/*": ["./public/*"]
     },
     "allowSyntheticDefaultImports": true,
   },
