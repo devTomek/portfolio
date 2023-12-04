@@ -27,10 +27,13 @@ export default function HomePage() {
           <h1 className="font-bold text-gray-800 mb-5">Frontend Developer</h1>
 
           <div className="mb-5">
-            <button className="border border-black rounded-full p-4 mr-2 hover:bg-black hover:text-white transition-colors min-w-[150px]">
-              Download CV
-            </button>
-            <button className="border border-black text-white bg-black p-4 rounded-full min-w-[150px]">
+            <Link
+              href="CV.pdf"
+              className="border border-black rounded-full p-4 mr-2 hover:bg-black hover:text-white transition-colors inline-block text-center min-w-[140px]"
+            >
+              Preview CV
+            </Link>
+            <button className="border border-black text-white bg-black p-4 rounded-full min-w-[140px]">
               Contact Info
             </button>
           </div>
