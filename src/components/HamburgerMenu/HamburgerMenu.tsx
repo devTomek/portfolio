@@ -31,7 +31,9 @@ export default function HamburgerMenu() {
       >
         {navbarLinks.map(({ href, label }) => (
           <li key={label} className="p-5">
-            <Link href={href}>{label}</Link>
+            <Link href={href} onClick={toggle}>
+              {label}
+            </Link>
           </li>
         ))}
       </ul>

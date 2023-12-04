@@ -58,7 +58,7 @@ export default function HomePage() {
       </Section>
 
       <Section>
-        <Heading as="h2" className="mb-5">
+        <Heading as="h2" className="mb-5" id="about-me">
           About Me
         </Heading>
 
@@ -90,7 +90,7 @@ export default function HomePage() {
       </Section>
 
       <Section>
-        <Heading as="h2" className="mb-5">
+        <Heading as="h2" className="mb-5" id="tech-stack">
           Tech Stack
         </Heading>
 
@@ -147,7 +147,7 @@ export default function HomePage() {
       </Section>
 
       <Section>
-        <Heading as="h2" className="mb-5">
+        <Heading as="h2" className="mb-5" id="contact-me">
           Contact Me
         </Heading>
 

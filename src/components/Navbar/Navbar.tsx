@@ -13,16 +13,16 @@ export interface NavbarLink {
 
 export const navbarLinks: NavbarLink[] = [
   {
-    label: 'About',
-    href: '#about',
+    label: 'About Me',
+    href: '#about-me',
   },
   {
-    label: 'Experience',
-    href: '#experience',
+    label: 'Tech Stack',
+    href: '#tech-stack',
   },
   {
-    label: 'Contact',
-    href: '#contact',
+    label: 'Contact me',
+    href: '#contact-me',
   },
 ];
 
