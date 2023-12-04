@@ -1,30 +1,31 @@
-import Image from 'next/image';
-import profileT from '@/public/profile-tenerife.jpg';
+import profileTenerife from '@/public/profile-tenerife.jpg';
+import profileHome from '@/public/profile-home.png';
 import { TfiLinkedin } from 'react-icons/tfi';
 import { TfiGithub } from 'react-icons/tfi';
 import Link from 'next/link';
+import Section from '@/components/Section/Section';
+import Heading from '@/components/Heading/Heading';
+import Card from '@/components/Card/Card';
+import { BsFillLaptopFill } from 'react-icons/bs';
+import Icon from '@/components/Icon/Icon';
+import { FaUniversity } from 'react-icons/fa';
+import Image from '@/components/Image/Image';
 
 export default function HomePage() {
   return (
     <>
-      <section className="flex flex-col lg:flex-row items-center justify-center my-24 lg:my-48">
+      <Section>
         <Image
-          alt="face rounded image"
-          src={profileT}
-          width={200}
-          height={200}
-          sizes={`(max-width: 1024px) 50vw, 30vw`}
-          className="w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] rounded-full object-cover mb-10 lg:mb-0 lg:mr-20"
+          alt="tenerife profile rounded image"
+          src={profileTenerife}
+          className="mb-10 lg:mb-0 lg:mr-20"
           priority
-          style={{
-            objectPosition: '0 -20px',
-          }}
         />
 
         <div className="flex flex-col items-center">
           <p className="text-gray-800 mb-1">Hello, I&apos;m</p>
-          <p className="text-3xl font-bold mb-1">Tomasz Chybziński</p>
-          <h1 className="font-bold text-gray-800 mb-5">Frontend Developer</h1>
+          <Heading className="mb-1">Tomasz Chybziński</Heading>
+          <p className="font-bold text-gray-800 mb-5">Frontend Developer</p>
 
           <div className="mb-5">
             <Link
@@ -50,7 +51,43 @@ export default function HomePage() {
             </Link>
           </div>
         </div>
-      </section>
+      </Section>
+
+      <Section className="lg:flex-col">
+        <Heading as="h2" className="mb-5">
+          About Me
+        </Heading>
+
+        <div className="flex flex-col lg:flex-row items-center">
+          <Image
+            alt="home face rounded image"
+            src={profileHome}
+            className="mb-10 lg:mb-0 lg:mr-20"
+          />
+
+          <div className="flex flex-col">
+            <div className="lg:flex lg:items-center lg:justify-center mb-5">
+              <Card className="mb-10 lg:mb-0 lg:mr-10 lg:w-full min-w-[230px]">
+                <Icon as={BsFillLaptopFill} />
+                <Heading as="h3" className="text-base lg:text-base">
+                  Experience
+                </Heading>
+                <p className="whitespace-nowrap">6+ years</p>
+                <p className="whitespace-nowrap">Frontend Developer</p>
+              </Card>
+
+              <Card className="lg:w-full min-w-[230px]">
+                <Icon as={FaUniversity} />
+                <Heading as="h3" className="text-base lg:text-base">
+                  Education
+                </Heading>
+                <p className="whitespace-nowrap">M.Sc. Masters Degree</p>
+                <p className="whitespace-nowrap">B.Sc. Bachelors Degree</p>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </Section>
     </>
   );
 }
