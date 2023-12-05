@@ -50,7 +50,7 @@ export default function HomePage() {
 
             <div className="flex">
               <Link
-                href="https://linkedin.com/in/tomasz-chybziński/"
+                href="https://linkedin.com/in/tomasz-chybzinski/"
                 target="_blank"
                 aria-label="linkedin icon"
               >
@@ -181,7 +181,7 @@ export default function HomePage() {
             </Link>
 
             <Link
-              href="https://linkedin.com/in/tomasz-chybziński/"
+              href="https://linkedin.com/in/tomasz-chybzinski/"
               className="block"
               target="_blank"
             >
