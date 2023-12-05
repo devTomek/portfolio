@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: "";
+Host: chybzinski.vercel.app
 
 # Sitemaps
-Sitemap: "";/sitemap.xml
+Sitemap: chybzinski.vercel.app/sitemap.xml
