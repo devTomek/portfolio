@@ -40,9 +40,12 @@ export default function HomePage() {
               >
                 Preview CV
               </Link>
-              <button className="border border-black text-white bg-black p-4 rounded-full min-w-[140px]">
+              <Link
+                href={navbarLinks.contactMe.href}
+                className="border border-black text-white bg-black p-4 rounded-full inline-block text-center min-w-[140px]"
+              >
                 Contact Info
-              </button>
+              </Link>
             </div>
 
             <div className="flex">
