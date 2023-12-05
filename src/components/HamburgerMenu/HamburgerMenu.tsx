@@ -1,10 +1,10 @@
 'use client';
 
+import { navbarLinks } from '@/components/Navbar/navbarUtils';
+import classNames from 'classnames';
+import { Squash as Hamburger } from 'hamburger-react';
 import Link from 'next/link';
 import { useState } from 'react';
-import { Squash as Hamburger } from 'hamburger-react';
-import { navbarLinks } from '@/components/Navbar/Navbar';
-import classNames from 'classnames';
 
 export default function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,10 +29,10 @@ export default function HamburgerMenu() {
           !isOpen ? 'translate-x-80' : '',
         )}
       >
-        {navbarLinks.map(({ href, label }) => (
-          <li key={label} className="p-5">
-            <Link href={href} onClick={toggle}>
-              {label}
+        {Object.entries(navbarLinks).map(([key, link]) => (
+          <li key={key} className="p-5">
+            <Link href={link.href} onClick={toggle}>
+              {link.label}
             </Link>
           </li>
         ))}

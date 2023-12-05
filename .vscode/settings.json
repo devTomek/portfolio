@@ -3,7 +3,8 @@
   "files.autoSave": "onFocusChange",
   "editor.codeActionsOnSave": {
     "source.fixAll": true,
-    "source.sortMembers": true
+    "source.sortMembers": true,
+    "source.organizeImports": true
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"

@@ -1,30 +1,11 @@
 'use client';
 
-import HamburgerMenu from '@/components/HamburgerMenu/HamburgerMenu';
-import { useScrolledDown } from '@/hooks/useScrolledDown';
-import Link, { LinkProps } from 'next/link';
 import { containerClassName } from '@/components/Container/Container';
+import HamburgerMenu from '@/components/HamburgerMenu/HamburgerMenu';
+import { navbarLinks } from '@/components/Navbar/navbarUtils';
+import { useScrolledDown } from '@/hooks/useScrolledDown';
 import classNames from 'classnames';
-
-export interface NavbarLink {
-  label: string;
-  href: LinkProps['href'];
-}
-
-export const navbarLinks: NavbarLink[] = [
-  {
-    label: 'About Me',
-    href: '#about-me',
-  },
-  {
-    label: 'Tech Stack',
-    href: '#tech-stack',
-  },
-  {
-    label: 'Contact me',
-    href: '#contact-me',
-  },
-];
+import Link from 'next/link';
 
 export default function Navbar() {
   const scrolledDown = useScrolledDown();
@@ -47,12 +28,12 @@ export default function Navbar() {
         </Link>
 
         <ul className="invisible lg:visible flex">
-          {navbarLinks.map(({ href, label }) => (
+          {Object.entries(navbarLinks).map(([key, link]) => (
             <li
-              key={label}
+              key={key}
               className="ml-10 text-3xl whitespace-nowrap hover:underline"
             >
-              <Link href={href}>{label}</Link>
+              <Link href={link.href}>{link.label}</Link>
             </li>
           ))}
         </ul>

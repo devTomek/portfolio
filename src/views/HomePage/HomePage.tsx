@@ -1,20 +1,19 @@
-import profileTenerife from '@/public/profile-tenerife.jpg';
-import profileHome from '@/public/profile-home.png';
-import { TfiLinkedin } from 'react-icons/tfi';
-import { TfiGithub } from 'react-icons/tfi';
-import Link from 'next/link';
-import Section from '@/components/Section/Section';
-import Heading from '@/components/Heading/Heading';
 import Card from '@/components/Card/Card';
-import { BsFillLaptopFill } from 'react-icons/bs';
-import Icon from '@/components/Icon/Icon';
-import { FaUniversity } from 'react-icons/fa';
-import Image from '@/components/Image/Image';
-import { IoCheckmarkOutline } from 'react-icons/io5';
-import { IoMdMail } from 'react-icons/io';
-import { IoLogoLinkedin } from 'react-icons/io';
-import FadeIn from '@/components/FadeIn/FadeIn';
 import EmailMask from '@/components/EmailMask/EmailMask';
+import FadeIn from '@/components/FadeIn/FadeIn';
+import Heading from '@/components/Heading/Heading';
+import Icon from '@/components/Icon/Icon';
+import Image from '@/components/Image/Image';
+import { navbarLinks } from '@/components/Navbar/navbarUtils';
+import Section from '@/components/Section/Section';
+import profileHome from '@/public/profile-home.png';
+import profileTenerife from '@/public/profile-tenerife.jpg';
+import Link from 'next/link';
+import { BsFillLaptopFill } from 'react-icons/bs';
+import { FaUniversity } from 'react-icons/fa';
+import { IoLogoLinkedin, IoMdMail } from 'react-icons/io';
+import { IoCheckmarkOutline } from 'react-icons/io5';
+import { TfiGithub, TfiLinkedin } from 'react-icons/tfi';
 
 export default function HomePage() {
   return (
@@ -63,7 +62,7 @@ export default function HomePage() {
 
       <FadeIn>
         <Section>
-          <Heading as="h2" className="mb-5" id="about-me">
+          <Heading as="h2" className="mb-5" id={navbarLinks.aboutMe.id}>
             About Me
           </Heading>
 
@@ -97,7 +96,7 @@ export default function HomePage() {
 
       <FadeIn>
         <Section>
-          <Heading as="h2" className="mb-5" id="tech-stack">
+          <Heading as="h2" className="mb-5" id={navbarLinks.techStack.id}>
             Tech Stack
           </Heading>
 
@@ -156,7 +155,7 @@ export default function HomePage() {
 
       <FadeIn>
         <Section>
-          <Heading as="h2" className="mb-5" id="contact-me">
+          <Heading as="h2" className="mb-5" id={navbarLinks.contactMe.id}>
             Contact Me
           </Heading>
 
