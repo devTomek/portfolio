@@ -52,10 +52,15 @@ export default function HomePage() {
               <Link
                 href="https://linkedin.com/in/tomasz-chybziński/"
                 target="_blank"
+                aria-label="linkedin icon"
               >
                 <TfiLinkedin className="w-10 h-10 mr-5" />
               </Link>
-              <Link href="https://github.com/devTomek/" target="_blank">
+              <Link
+                href="https://github.com/devTomek/"
+                target="_blank"
+                aria-label="github icon"
+              >
                 <TfiGithub className="w-10 h-10 mt-1" />
               </Link>
             </div>

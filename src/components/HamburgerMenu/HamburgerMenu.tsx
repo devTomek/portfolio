@@ -20,6 +20,7 @@ export default function HamburgerMenu() {
           size={40}
           rounded
           color={isOpen ? 'white' : 'black'}
+          aria-label="hamburger menu button"
         />
       </div>
 
@@ -30,8 +31,12 @@ export default function HamburgerMenu() {
         )}
       >
         {Object.entries(navbarLinks).map(([key, link]) => (
-          <li key={key} className="p-5">
-            <Link href={link.href} onClick={toggle}>
+          <li key={key} className="p-5" aria-label={`${link.label} list item`}>
+            <Link
+              href={link.href}
+              onClick={toggle}
+              aria-label={`${link.label} link`}
+            >
               {link.label}
             </Link>
           </li>
