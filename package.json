@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint",
     "lint-fix": "next lint --fix"
@@ -14,6 +15,7 @@
     "framer-motion": "^10.16.12",
     "hamburger-react": "^2.5.0",
     "next": "14.0.3",
+    "next-sitemap": "^4.2.3",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^4.12.0"
