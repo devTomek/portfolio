@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, MouseEventHandler } from 'react';
+import { MouseEventHandler, useState } from 'react';
 
 const VISIBLE_USERNAME_LENGTH = 3;
 const VISIBLE_DOMAIN_LENGTH = 2;
