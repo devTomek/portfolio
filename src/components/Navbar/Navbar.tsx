@@ -48,7 +48,10 @@ export default function Navbar() {
 
         <ul className="invisible lg:visible flex">
           {navbarLinks.map(({ href, label }) => (
-            <li key={label} className="ml-10 text-3xl hover:underline">
+            <li
+              key={label}
+              className="ml-10 text-3xl whitespace-nowrap hover:underline"
+            >
               <Link href={href}>{label}</Link>
             </li>
           ))}
