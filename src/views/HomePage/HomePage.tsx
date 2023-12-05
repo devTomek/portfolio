@@ -14,6 +14,7 @@ import { IoCheckmarkOutline } from 'react-icons/io5';
 import { IoMdMail } from 'react-icons/io';
 import { IoLogoLinkedin } from 'react-icons/io';
 import FadeIn from '@/components/FadeIn/FadeIn';
+import EmailMask from '@/components/EmailMask/EmailMask';
 
 export default function HomePage() {
   return (
@@ -166,7 +167,9 @@ export default function HomePage() {
             >
               <Card resetFlex className="flex justify-center">
                 <Icon as={IoMdMail} className="mr-2" />
-                <Heading as="h3">Mail</Heading>
+                <Heading as="h3">
+                  <EmailMask email="tomasz.chybzinski@gmail.com" maskDomain />
+                </Heading>
               </Card>
             </Link>
 
