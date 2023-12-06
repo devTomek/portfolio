@@ -21,10 +21,6 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
-      "@/components/*": ["src/components/*"],
-      "@/components/views": ["src/views/*"],
-      "@/hooks/*": ["src/hooks/*"],
-      "@/public/*": ["./public/*"]
     },
     "allowSyntheticDefaultImports": true,
   },
