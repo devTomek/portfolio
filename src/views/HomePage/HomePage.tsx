@@ -6,6 +6,7 @@ import Icon from '@/components/Icon/Icon';
 import Image from '@/components/Image/Image';
 import { navbarLinks } from '@/components/Navbar/navbarUtils';
 import Section from '@/components/Section/Section';
+import { experienceYears } from '@/lib/experienceYears';
 import profileHome from '@/public/profile-home.png';
 import profileTenerife from '@/public/profile-tenerife.jpg';
 import Link from 'next/link';
@@ -86,7 +87,7 @@ export default function HomePage() {
                 <Card className="mb-10 lg:mb-0 lg:mr-10 lg:w-full">
                   <Icon as={BsFillLaptopFill} />
                   <Heading as="h3">Experience</Heading>
-                  <p className="whitespace-nowrap">6+ years</p>
+                  <p className="whitespace-nowrap">{experienceYears} years</p>
                   <p className="whitespace-nowrap">Frontend Developer</p>
                 </Card>
 
