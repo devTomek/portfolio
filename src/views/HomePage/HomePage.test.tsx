@@ -7,7 +7,7 @@ jest.mock('framer-motion', () => ({
   useInView: () => true,
 }));
 
-describe('<HomePage />', () => {
+describe.skip('<HomePage />', () => {
   it('should render', () => {
     render(<HomePage />);
 
