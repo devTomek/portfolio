@@ -7,5 +7,7 @@ interface IconProps {
 }
 
 export default function Icon({ as: As, className }: IconProps) {
-  return <As className={classNames('w-10 h-10', className)} />;
+  return (
+    <As data-testid="icon" className={classNames('w-10 h-10', className)} />
+  );
 }
