@@ -7,14 +7,14 @@ import Image from '@/components/Image/Image';
 import { navbarLinks } from '@/components/Navbar/navbarUtils';
 import Section from '@/components/Section/Section';
 import { experienceYears } from '@/lib/experienceYears';
-import profileHome from '@/public/profile-home.png';
-import profileTenerife from '@/public/profile-tenerife.jpg';
 import Link from 'next/link';
 import { BsFillLaptopFill } from 'react-icons/bs';
 import { FaUniversity } from 'react-icons/fa';
 import { IoLogoLinkedin, IoMdMail } from 'react-icons/io';
 import { IoCheckmarkOutline } from 'react-icons/io5';
 import { TfiGithub, TfiLinkedin } from 'react-icons/tfi';
+import profileHome from '/public/profile-home.png';
+import profileTenerife from '/public/profile-tenerife.jpg';
 
 export default function HomePage() {
   return (
