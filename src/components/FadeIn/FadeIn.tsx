@@ -29,6 +29,7 @@ export default function FadeIn({ children }: FadeInProps) {
       transition={{ duration: 1 }}
       initial="hidden"
       animate={isInView ? 'visible' : 'hidden'}
+      data-testid="fadeIn"
     >
       {children}
     </motion.div>
