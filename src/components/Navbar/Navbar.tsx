@@ -17,6 +17,7 @@ export default function Navbar() {
       />
 
       <nav
+        data-testid="navbar"
         className={classNames(
           containerClassName,
           'h-20 flex items-center justify-between transition-transform fixed top-0 left-0 right-0 bg-white z-10',
