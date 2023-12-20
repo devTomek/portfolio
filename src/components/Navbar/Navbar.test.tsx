@@ -3,7 +3,7 @@ import * as hooks from '@/hooks/useScrolledDown';
 import { render, screen } from '@/test-utils';
 import { navbarLinks } from './navbarUtils';
 
-jest.mock('portfolio/src/hooks/useScrolledDown.tsx', () => ({
+jest.mock('portfolio/src/hooks/useScrolledDown.ts', () => ({
   useScrolledDown: jest.fn(() => false),
 }));
 
