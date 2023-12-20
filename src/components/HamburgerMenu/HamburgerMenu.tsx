@@ -25,6 +25,7 @@ export default function HamburgerMenu() {
       </div>
 
       <ul
+        data-testid="menu"
         className={classNames(
           'bg-black text-white text-2xl h-screen transition-all fixed top-0 right-0 w-80',
           !isOpen ? 'translate-x-80' : '',
