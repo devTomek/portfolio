@@ -35,7 +35,8 @@ export default function HomePage() {
 
             <div className="mb-5">
               <Link
-                href="CV.pdf"
+                // href="CV.pdf"
+                href="/"
                 target="_blank"
                 className="border border-black rounded-full p-4 mr-2 hover:bg-black hover:text-white transition-colors inline-block text-center min-w-[140px]"
               >
